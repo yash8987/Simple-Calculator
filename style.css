@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/004/968/002/original/cute-abstract-modern-background-free-vector.jpg');
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:2em;
+    align-items: center;
+    justify-items: center;
+    
+}
+.container h1{
+    color:black;
+    margin-top: 1em;
+}
+.calculator_container{
+    border: 2px solid rgb(189, 246, 17);
+    border-radius: 20px;
+    padding:1.5em;
+    width:auto;
+    height:auto;
+    background-color: brown;
+    display:grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    background-color: #fd683b;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+    
+}
+.calculator_container input{
+    width:100%;
+    height:50px;
+    outline:none;
+    text-align: end;
+    padding-right:1em;
+    border-width: 0.5px;
+    border-style: solid;
+    border-radius: 5px;
+    color:black;
+    font-size: 22px;
+    cursor: pointer;
+    background-color:#EFEFEF;
+}
+::placeholder {
+    color: black;
+    padding:0.2em;
+  }
+.calculator_buttons{
+    padding-top:1em;
+    display:grid;
+    grid-template-columns: repeat(4,auto);
+    justify-items: center;
+    gap:1em;
+
+}
+.calculator_buttons button{
+    width:50px;
+    height:50px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-radius: 20%;
+    cursor:pointer;
+    font-size: 22px;
+}
